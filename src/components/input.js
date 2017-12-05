@@ -1,12 +1,10 @@
-import React from 'react';
-
-export default function Input(props) {
+export function Input(props) {
     return (
         <input
             type="number"
-            id={props.id}
-            onChange={e => props.onChange(e.target.value)}
-            value={String(props.value)}
+            id={this.props.id}
+            onChange={e => this.props.onChange(e.value)}
+            value={this.props.value}
         />
     );
 }
